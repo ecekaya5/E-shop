@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E Shop</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">MiniShop</div>
+
+        <div class="cart">
+            🛒 Sepet
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+
+    <!-- Ana içerik -->
+    <main>
+
+        <section class="hero">
+            <h1>Ürünlerimizi Keşfet</h1>
+            <p>İhtiyacın olan ürünleri kolayca bul.</p>
+        </section>
+
+
+        <!-- Arama ve filtre -->
+        <section class="filters">
+
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Ürün ara..."
+            >
+
+            <select id="category-filter">
+                <option value="all">Tüm Kategoriler</option>
+                <option value="electronics">Elektronik</option>
+                <option value="clothing">Giyim</option>
+                <option value="accessories">Aksesuar</option>
+            </select>
+
+        </section>
+
+
+        <!-- Ürünler -->
+        <section id="product-list" class="products">
+            <!-- JavaScript ürünleri buraya ekleyecek -->
+        </section>
+
+    </main>
+
+
+    <!-- Sepet paneli -->
+    <aside id="cart-panel" class="cart-panel">
+
+        <div class="cart-header">
+            <h2>Sepetim</h2>
+
+            <button id="close-cart">✕</button>
+        </div>
+
+        <div id="cart-items">
+            <!-- Sepet ürünleri burada -->
+        </div>
+
+        <div class="cart-footer">
+
+            <h3>
+                Toplam:
+                <span id="cart-total">0 ₺</span>
+            </h3>
+
+            <button id="checkout-btn" class="checkout-btn">
+                Sipariş Ver
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- Arka plan -->
+    <div id="overlay"></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
